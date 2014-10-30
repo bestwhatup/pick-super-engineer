@@ -12,11 +12,10 @@ def pick_engineer ()
 	return engineers[rand(engineers.count)][0..-3]
 end
 
-def featureB()
-	name = pick_engineer()
+def featureB(name)
 	firstName = name.split(' ')
 	surName = firstName[1].split(//)
-	print firstName[0] + " " + surName[0] + "..."
+	puts firstName[0] + " " + surName[0] + "..."
 end
 
 
