@@ -15,8 +15,8 @@ end
 def featureB()
 	name = pick_engineer()
 	firstName = name.split(' ')
-	surName = a[1].split(//)
-	print a[0] + " " + b[0] + "..."
+	surName = firstName[1].split(//)
+	print firstName[0] + " " + surName[0] + "..."
 end
 
 
