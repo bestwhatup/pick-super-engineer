@@ -12,8 +12,6 @@ def pick_engineer ()
 	return engineers[rand(engineers.count)][0..-2]
 end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 def featureC(searchText)
 	engineers = Array.new() 
 	#loop read engineer list and add to engineer array
@@ -29,8 +27,6 @@ def featureC(searchText)
 	end
 end
 
-
-=======
 def featureA(textRandom)
   puts textRandom
   nameRandom = textRandom 
@@ -40,8 +36,6 @@ def featureA(textRandom)
   #puts nameRandom
 end
 
->>>>>>> 34d23ff0d29253e79fd520c408b14006f8950e6e
-=======
 def featureB()
 	name = pick_engineer()
 	firstName = name.split(' ')
@@ -49,8 +43,6 @@ def featureB()
 	print firstName[0] + " " + surName[0] + "..."
 end
 
-
->>>>>>> 6ec82a12216366e6ccde92c268045e2c320e1486
 def selectName(functionNumber , *searchText)
 	case functionNumber
 	when 1
