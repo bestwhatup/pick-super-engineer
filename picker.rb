@@ -27,13 +27,11 @@ def featureC(searchText)
 	end
 end
 
-def featureA(textRandom)
-  puts textRandom
-  nameRandom = textRandom 
+def featureA(nameRandom) 
   if nameRandom.include?(' ')
      nameRandom.gsub!(/ /, '.')
   end
-  #puts nameRandom
+  puts nameRandom
 end
 
 def featureB(name)
