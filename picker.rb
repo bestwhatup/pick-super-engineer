@@ -12,16 +12,18 @@ def pick_engineer ()
 end
 
 def featureC(searchText)
+	text = searchText.join
 	engineers = Array.new() 
 	#loop read engineer list and add to engineer array
 	File.read("engineers.txt").each_line do |line|
 		engineers.push(line)
 	end
+
 	for num in 0...engineers.size
-	  if engineers[num].include? "#{@searchText}"
+	  if engineers[num].include? ("#{text}")		
 		puts engineers[num]
-	  end
-	  break
+		break
+	  end  
 	end
 end
 
