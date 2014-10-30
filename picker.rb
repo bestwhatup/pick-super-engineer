@@ -12,6 +12,22 @@ def pick_engineer ()
 	return engineers[rand(engineers.count)][0..-3]
 end
 
+def featureC(searchText)
+	engineers = Array.new() 
+	#loop read engineer list and add to engineer array
+	File.read("engineers.txt").each_line do |line|
+		engineers.push(line)
+	end
+		
+	for num in 0...engineers.size
+	  if engineers[num].include? "#{@searchText}"
+		puts engineers[num]
+	  end
+	  break
+	end
+end
+
+
 def selectName(functionNumber , *searchText)
 	case functionNumber
 	when 1
@@ -21,7 +37,7 @@ def selectName(functionNumber , *searchText)
 	when 3
 		return "Enter Your Code"
 	when 4
-		return "Enter Your Code"
+		return featureC(searchText)
 	else
 		return "plase enter number function number again"
 	end
