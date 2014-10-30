@@ -9,7 +9,7 @@ def pick_engineer ()
 		engineers.push(line)
 	end
 	#random engineer and show to display
-	return engineers[rand(engineers.count)][0..-3]
+	return engineers[rand(engineers.count)][0..-2]
 end
 
 def selectName(functionNumber , *searchText)
