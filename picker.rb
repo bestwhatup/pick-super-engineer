@@ -35,7 +35,7 @@ def featureA(textRandom)
 end
 
 def featureB(name)
-	firstName = name.split(' ')
+	firstName = name.split('.')
 	surName = firstName[1].split(//)
 	puts firstName[0] + " " + surName[0] + "..."
 end
