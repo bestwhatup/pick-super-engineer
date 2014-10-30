@@ -36,11 +36,10 @@ def featureA(textRandom)
   #puts nameRandom
 end
 
-def featureB()
-	name = pick_engineer()
+def featureB(name)
 	firstName = name.split(' ')
 	surName = firstName[1].split(//)
-	print firstName[0] + " " + surName[0] + "..."
+	puts firstName[0] + " " + surName[0] + "..."
 end
 
 if __FILE__ == $0
