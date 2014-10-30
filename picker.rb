@@ -12,6 +12,14 @@ def pick_engineer ()
 	return engineers[rand(engineers.count)][0..-3]
 end
 
+def featureB()
+	name = pick_engineer()
+	firstName = name.split(' ')
+	surName = a[1].split(//)
+	print a[0] + " " + b[0] + "..."
+end
+
+
 def selectName(functionNumber , *searchText)
 	case functionNumber
 	when 1
@@ -19,7 +27,7 @@ def selectName(functionNumber , *searchText)
 	when 2
 		return "Enter Your Code"
 	when 3
-		return "Enter Your Code"
+		return featureB()
 	when 4
 		return "Enter Your Code"
 	else
